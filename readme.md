@@ -29,29 +29,40 @@ And you put `Latex` in your docs like
 ```rust
 /// $$E = mc^2 $$
 /// $$m = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}$$
+fn energy(v: Velocity) -> Energy {...}
 
 ```
 
-For compiling the docs:
+## Compiling the docs manually (without `.cargo/config`):
 
-## NIX kind
+### NIX kind
 
 ```sh
 RUSTDOCFLAGS="--html-in-header src/docs-header.html" cargo doc --no-deps --open
 ```
 
-## Windows
+### Windows
 
-### cmd
+#### cmd
 
 ```
 set RUSTDOCFLAGS=--html-in-header src\docs-header.html
 cargo doc --no-deps --open
 ```
 
-### PowerShell
+#### PowerShell
 
 ```
 $env:RUSTDOCFLAGS="--html-in-header .\src\docs-header.html"
 cargo doc --no-deps --open
+```
+
+## Compile and copy to docs
+
+Because the solution could not work in `docs.rs`, you can publish the docs on your own host. 
+This minimal example is hosted with [github pages](https://pages.github.com/). You can see the docs generated, with `LaTeX` at
+[minimal example docs with LaTex](https://victe.github.io/rust-latex-doc-minimal-example)
+
+```sh
+cargo doc -- && cp -r target/doc/ docs/
 ```
