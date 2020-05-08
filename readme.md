@@ -61,7 +61,7 @@ cargo doc --no-deps --open
 
 Because the solution could not work in `docs.rs`, you can publish the docs on your own host. 
 This minimal example is hosted with [github pages](https://pages.github.com/). You can see the docs generated, with `LaTeX` at
-[minimal example docs with LaTex](https://victe.github.io/rust-latex-doc-minimal-example)
+[minimal example docs with LaTex](https://victe.github.io/rust-latex-doc-minimal-example/rust_latex_doc_minimal_example/)
 
 ```sh
 cargo doc -- && cp -r target/doc/ docs/
