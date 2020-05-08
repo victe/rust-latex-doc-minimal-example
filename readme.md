@@ -22,7 +22,7 @@ The `html` file is something like this
 </script>
 ```
 
-In this minimal example repo is in `src/pp.html`.
+In this minimal example repo is in `src/docs-header.html`.
 
 And you put `Latex` in your docs like
 
@@ -37,7 +37,7 @@ For compiling the docs:
 ## NIX kind
 
 ```sh
-RUSTDOCFLAGS="--html-in-header src/pp.html" cargo doc --no-deps --open
+RUSTDOCFLAGS="--html-in-header src/docs-header.html" cargo doc --no-deps --open
 ```
 
 ## Windows
@@ -45,13 +45,13 @@ RUSTDOCFLAGS="--html-in-header src/pp.html" cargo doc --no-deps --open
 ### cmd
 
 ```
-set RUSTDOCFLAGS=--html-in-header src\pp.html
+set RUSTDOCFLAGS=--html-in-header src\docs-header.html
 cargo doc --no-deps --open
 ```
 
 ### PowerShell
 
 ```
-$env:RUSTDOCFLAGS="--html-in-header .\src\pp.html"
+$env:RUSTDOCFLAGS="--html-in-header .\src\docs-header.html"
 cargo doc --no-deps --open
 ```
