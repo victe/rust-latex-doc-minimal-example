@@ -10,7 +10,7 @@ repository = "https://github.com/victe/rust-latex-doc-minimal-example"
 
 license = "CC0-1.0"
 categories = ["development-tools", "mathematics", "science"]
-keywords = ["latex", "rustdoc", "docs.rs"]
+keywords = ["latex", "rustdoc", "docs"]
 
 [dependencies]
 
