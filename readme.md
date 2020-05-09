@@ -25,7 +25,7 @@ As a result, see the documentation page of this repo example at [docs.rs](https:
 
 For passing `--html-in-header` to `cargo doc` command there are two options:
 
-1) Using the environmental variable RUSTDOCFLAGS ([see cargo rustdoc](https://doc.rust-lang.org/cargo/commands/cargo-rustdoc.html))
+### 1) Using the environmental variable RUSTDOCFLAGS ([see cargo rustdoc](https://doc.rust-lang.org/cargo/commands/cargo-rustdoc.html))
 
 Linux
 
@@ -47,14 +47,14 @@ $env:RUSTDOCFLAGS="--html-in-header .\src\docs-header.html"
 cargo doc
 ```
 
-2) Setting the `build.rustdocflags` config value in `.cargo\config.toml` (in this Repo is configured)
+### 2) Setting the `build.rustdocflags` config value in `.cargo\config.toml` (in this Repo is configured)
 
 ```toml
 [build]
 rustdocflags = [ "--html-in-header", "./src/docs-header.html" ]
 ```
 
-## Publish the crate and showing documentation in [docs.rs](https://docs.rs)
+## Publish the crate and showing documentation in docs.rs
 
 The crate must be a `lib`. If it is only a `bin`, [docs.rs](https://docs.rs) do not build the documentation.
 
