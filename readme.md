@@ -33,33 +33,33 @@ fn energy(v: Velocity) -> Energy {...}
 
 ```
 
-## Compiling the docs manually (without `.cargo/config`):
+## Compiling the docs manually (without `.cargo/config`)
 
 ### NIX kind
 
 ```sh
-RUSTDOCFLAGS="--html-in-header src/docs-header.html" cargo doc --no-deps --open
+RUSTDOCFLAGS="--html-in-header src/docs-header.html" cargo doc --open
 ```
 
 ### Windows
 
 #### cmd
 
-```
+```bat
 set RUSTDOCFLAGS=--html-in-header src\docs-header.html
-cargo doc --no-deps --open
+cargo doc --open
 ```
 
 #### PowerShell
 
-```
+```bat
 $env:RUSTDOCFLAGS="--html-in-header .\src\docs-header.html"
-cargo doc --no-deps --open
+cargo doc --open
 ```
 
 ## Compile and copy to docs
 
-Because the solution could not work in `docs.rs`, you can publish the docs on your own host. 
+Because the solution could not work in `docs.rs`, you can publish the docs on your own host.
 This minimal example is hosted with [github pages](https://pages.github.com/). You can see the docs generated, with `LaTeX` at
 [minimal example docs with LaTex](https://victe.github.io/rust-latex-doc-minimal-example/rust_latex_doc_minimal_example/)
 
