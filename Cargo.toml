@@ -1,16 +1,16 @@
 [package]
 name = "rust-latex-doc-minimal-example"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Vicente Ramirez Perea <victe@ramper.net>"]
 edition = "2018"
 description = "Minimal crate example for getting latex in docs."
 readme = "readme.md"
 homepage = "https://github.com/victe/rust-latex-doc-minimal-example"
 repository = "https://github.com/victe/rust-latex-doc-minimal-example"
-documentation = "https://victe.github.io/rust-latex-doc-minimal-example/rust_latex_doc_minimal_example/"
+
 license = "CC0-1.0"
 categories = ["development-tools", "mathematics", "science"]
-keywords = ["latex", "rustdoc"]
+keywords = ["latex", "rustdoc", "docs.rs"]
 
 [dependencies]
 

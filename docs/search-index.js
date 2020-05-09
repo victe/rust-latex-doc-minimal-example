@@ -1,3 +1,3 @@
 var searchIndex={};
-searchIndex["rust_latex_doc_minimal_example"] = {"doc":"Example inline with text $E = mc^2$. Example in separate…","i":[],"p":[]};
+searchIndex["rust_latex_doc_minimal_example"] = {"doc":"This crate is just a minimal example to show how to use…","i":[],"p":[]};
 addSearchOptions(searchIndex);initSearch(searchIndex);
