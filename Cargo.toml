@@ -4,7 +4,7 @@ version = "0.2.0"
 authors = ["Vicente Ramirez Perea <victe@ramper.net>"]
 edition = "2018"
 description = "Minimal crate example for getting latex in docs."
-readme = "readme.md"
+readme = "crates-io.md"
 homepage = "https://github.com/victe/rust-latex-doc-minimal-example"
 repository = "https://github.com/victe/rust-latex-doc-minimal-example"
 
